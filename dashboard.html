@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profit Loss Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script> 
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <!-- Add other navigation links here -->
+        </ul>
+    </nav>
+    <div class="dashboard-container">
+        <h1>Profit Loss Dashboard</h1>
+        <div class="dropdown">
+            <select id="dropdown-content">
+            </select>             
+            </div>
+        <div class="date-filters">
+            <label for="fromDate">From Date:</label>
+            <input type="date" id="fromDate">
+            <label for="toDate">To Date:</label>
+            <input type="date" id="toDate">
+            <button id="filterButton" >Apply Filter</button>
+        </div>
+        <div id="result" style="display: none;">
+            <div id="profitResult"></div>
+            <div id="lossResult"></div>
+        </div>
+        <div class="chart-container">
+            <canvas id="profitLossChart"></canvas>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

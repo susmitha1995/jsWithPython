@@ -1,0 +1,70 @@
+.login-container{
+    width: 300px;
+    margin: 100px auto;
+    padding: 40px;
+    padding-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 20px;
+   
+}
+
+label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s;
+    color: #ccc;
+}
+
+input{ 
+    width: 90%;
+    margin: 5px 0px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus + label,
+input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+
+button {
+    width: 98%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+  #password-container{
+    position: relative;
+ }
+
+
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Adjust the right value as needed to fit into input box*/
+    transform: translateY(-50%);
+    cursor: pointer;
+    
+  }
+
+  
